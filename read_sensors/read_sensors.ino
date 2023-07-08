@@ -89,9 +89,9 @@ float getUltraReading()
   int ultrasonicValue = analogRead(ultrasonicPin);
   distance = (ultrasonicValue * 2) / 15;
 
-  if(distance < 20){
-    distance = distance - ((distance * 80)/100);
-  }
+  //  if(distance < 20){
+  //    distance = distance - ((distance * 80)/100);
+  //  }
   
   ultrasonicReadings[readingsIndex] = distance;
   
